@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "problem-fetcher"
+version = "0.1.0"
+description = "Problem and contest workspace automation: Competitive Companion receiver, statement/sample parsers for Codeforces, AtCoder and others, and per-problem folders with templates and tests."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+problem-fetcher = "problem_fetcher.cli:main"
+
+[tool.setuptools]
+packages = ["problem_fetcher"]
